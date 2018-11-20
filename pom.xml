@@ -17,6 +17,7 @@
 
     <modules>
         <module>gateway</module>
+        <module>eureka</module>
         <module>book</module>
         <module>mack</module>
     </modules>
