@@ -20,6 +20,8 @@
         <module>eureka</module>
         <module>book</module>
         <module>mack</module>
+        <module>suke</module>
+        <module>bite</module>
     </modules>
 
     <dependencyManagement>

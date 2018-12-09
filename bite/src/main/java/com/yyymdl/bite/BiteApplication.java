@@ -1,4 +1,4 @@
-package com.yyymdl.book;
+package com.yyymdl.bite;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-public class BookApplication {
+public class BiteApplication {
 
     @RequestMapping(value = "/go")
     public String available() {
-        return "appfront1 book";
+        return "appfront1 bite";
     }
 
     @RequestMapping(value = "/out")
@@ -20,6 +20,6 @@ public class BookApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(BookApplication.class, args);
+        SpringApplication.run(BiteApplication.class, args);
     }
 }

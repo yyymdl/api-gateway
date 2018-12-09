@@ -1,4 +1,4 @@
-package com.yyymdl.book;
+package com.yyymdl.mack;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ public class MackApplication {
 
     @RequestMapping(value = "/go")
     public String available() {
-        return "mack in action";
+        return "appfront2 mack";
     }
 
     @RequestMapping(value = "/out")

@@ -75,9 +75,9 @@ public class CustomRouteLocator extends SimpleRouteLocator implements Refreshabl
         Map<String, ZuulRoute> routes = new LinkedHashMap<>();
         List<ZuulRouteVO> results = jdbcTemplate.query("select * from gateway_api_define where enabled = true ",new BeanPropertyRowMapper<>(ZuulRouteVO.class));
         for (ZuulRouteVO result : results) {
-            if(org.apache.commons.lang3.StringUtils.isBlank(result.getPath()) || org.apache.commons.lang3.StringUtils.isBlank(result.getUrl()) ){
+            /*if(org.apache.commons.lang3.StringUtils.isBlank(result.getPath()) || org.apache.commons.lang3.StringUtils.isBlank(result.getUrl()) ){
                 continue;
-            }
+            }*/
             ZuulRoute zuulRoute = new ZuulRoute();
             try {
                 org.springframework.beans.BeanUtils.copyProperties(result,zuulRoute);
